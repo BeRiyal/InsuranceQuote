@@ -181,6 +181,7 @@ public class InsuranceQuoteTestCasesTest
         driver.FindElement(By.Id("experience")).SendKeys("5");
         driver.FindElement(By.Id("accidents")).SendKeys("0");
         driver.FindElement(By.Id("btnSubmit")).Click();
+
         {
             var element = driver.FindElement(By.Id("btnSubmit"));
             Actions builder = new Actions(driver);
