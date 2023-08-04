@@ -142,7 +142,7 @@ public class InsuranceQuoteTestCasesTest
         driver.FindElement(By.Id("age")).SendKeys("27");
         driver.FindElement(By.Id("experience")).SendKeys("3");
         driver.FindElement(By.Id("accidents")).SendKeys("0");
-        driver.FindElement(By.Id("btnSubmit")).Click()
+        driver.FindElement(By.Id("btnSubmit")).Click();
 
         //Assert
         Assert.That(driver.FindElement(By.Id("phone-error")).Text, Is.EqualTo("Phone Number must follow the patterns 111-111-1111 or (111)111-1111"));
